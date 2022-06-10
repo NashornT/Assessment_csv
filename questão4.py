@@ -35,7 +35,7 @@ def juros():
 
 def grafico():
     juros()
-    pit.scatter(x, y)
+    pit.plot(x, y)
     pit.show()
 
 
