@@ -95,7 +95,7 @@ def grafico_pib():
             else:
                 y.append(float(i))
 
-        pit.scatter(x,y)
+        pit.plot(x,y)
         pit.show()
     except:
         print('Valor Invalido!! ')        
