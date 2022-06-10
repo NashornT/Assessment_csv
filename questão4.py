@@ -35,7 +35,10 @@ def juros():
 
 def grafico():
     juros()
-    pit.plot(x, y)
+    pit.plot(x,y, label= 'Evolução do valor acumulado')
+    pit.xlabel('número de períodos ')
+    pit.ylabel('valor acumulado')
+    pit.legend()
     pit.show()
 
 

@@ -1,4 +1,5 @@
 
+from cProfile import label
 import csv
 import matplotlib.pyplot as pit
 import numpy as np
@@ -95,7 +96,10 @@ def grafico_pib():
             else:
                 y.append(float(i))
 
-        pit.plot(x,y)
+        pit.plot(x,y, label= 'Evolução do PIB')
+        pit.xlabel('Anos')
+        pit.ylabel('PIB')
+        pit.legend()
         pit.show()
     except:
         print('Valor Invalido!! ')        
