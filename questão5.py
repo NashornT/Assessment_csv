@@ -1,8 +1,6 @@
-
-from cProfile import label
 import csv
 import matplotlib.pyplot as pit
-import numpy as np
+
 
 arquivo = open('Assessment_PIBs - modelo 1.csv', 'r',encoding="utf8")
 reader = csv.reader(arquivo)
