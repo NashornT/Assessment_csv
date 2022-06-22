@@ -21,30 +21,34 @@ def saude_financeira():
         taxa_transporte = (100*transporte/valor_max)
 
 
-        print('~~'*15)
+        print('~~~'*20)
         print(f'Renda mensal total: R$ {valor_max}')
         print(f'Gastos totais com moradia: R$ {moradia}')
         print(f'Gastos totais com educação: R$ {educacao}')
         print(f'Gastos totais com transporte: R$ {transporte}')
-        print('~~'*15)
+        print('~~~'*20)
 
 
 
 
         if(moradia > recomendado_moradia):
-            print(f'Seus gastos totais com moradia comprometem {taxa_moradia:.2f}% de sua renda total. O máximo recomendado é de 30% . Portanto, idealmente, o máximo de sua renda comprometida com moradia deveria ser de R${recomendado_moradia:.2f}.')
+            print(f'Seus gastos totais com moradia comprometem {taxa_moradia:.2f}% de sua renda total.\n O máximo recomendado é de 30% . Portanto, idealmente, o máximo de sua renda comprometida com moradia deveria ser de R${recomendado_moradia:.2f}.')
+            print('~~~'*30)
         else:
-            print(f'Seus gastos totais com transporte comprometem {taxa_moradia:.2f}% de sua renda total. O máximo recomendado é de 30%. Seus gastos estão dentro da margem recomendada.')
+            print(f'Seus gastos totais com transporte comprometem {taxa_moradia:.2f}% de sua renda total.\n O máximo recomendado é de 30%. Seus gastos estão dentro da margem recomendada.')
+            print('~~~'*30)
 
         if(educacao > recomendado_educacao):
-            print(f'Seus gastos totais com educação comprometem {taxa_educacao:.2f}% de sua renda total. O máximo recomendado é de 20% . Portanto, idealmente, o máximo de sua renda comprometida com moradia deveria ser de R${recomendado_educacao:.2f}.')
+            print(f'Seus gastos totais com educação comprometem {taxa_educacao:.2f}% de sua renda total.\n O máximo recomendado é de 20% . Portanto, idealmente, o máximo de sua renda comprometida com moradia deveria ser de R${recomendado_educacao:.2f}.')
+            print('~~~'*30)
         else:
-            print(f'Seus gastos totais com educação comprometem {taxa_educacao:.2f}% de sua renda total. O máximo recomendado é de 20% . Portanto, idealmente, Seus gastos estão dentro da margem recomendada. ')
+            print(f'Seus gastos totais com educação comprometem {taxa_educacao:.2f}% de sua renda total.\n O máximo recomendado é de 20% . Portanto, idealmente, Seus gastos estão dentro da margem recomendada. ')
+            print('~~~'*30)
 
         if(transporte > recomendado_transporte):
-            print(f'Seus gastos totais com transporte comprometem {taxa_transporte:.2f}% de sua renda total. O máximo recomendado é de 15% . Portanto, idealmente, o máximo de sua renda comprometida com moradia deveria ser de R${recomendado_transporte:.2f}.')
+            print(f'Seus gastos totais com transporte comprometem {taxa_transporte:.2f}% de sua renda total.\n O máximo recomendado é de 15% . Portanto, idealmente, o máximo de sua renda comprometida com moradia deveria ser de R${recomendado_transporte:.2f}.')
         else:
-            print(f'Seus gastos totais com transporte comprometem {taxa_transporte:.2f}% de sua renda total. O máximo recomendado é de 15% . Portanto, idealmente, Seus gastos estão dentro da margem recomendada. ')
+            print(f'Seus gastos totais com transporte comprometem {taxa_transporte:.2f}% de sua renda total.\n O máximo recomendado é de 15% . Portanto, idealmente, Seus gastos estão dentro da margem recomendada. ')
 
     except:
         print('Valor valido!!')

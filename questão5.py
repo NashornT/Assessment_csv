@@ -2,7 +2,7 @@ import csv
 import matplotlib.pyplot as pit
 
 
-arquivo = open('Assessment_PIBs - modelo 1.csv', 'r',encoding="utf8")
+arquivo = open('Assessment_PIBs.csv', 'r',encoding="utf8")
 reader = csv.reader(arquivo)
 paises = []
 anos = []
@@ -103,8 +103,10 @@ def grafico_pib():
         print('Valor Invalido!! ')        
     
    
-  
-
+solicitador_pib()  
+print('~~~'*20)
+variacoes_anos()
+print('~~~'*20)
 grafico_pib()
 
 

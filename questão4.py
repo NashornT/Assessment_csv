@@ -10,7 +10,7 @@ def juros():
         valor_inicial = float(input('Valor inicial: R$ '))
         perc_rendimento = float(input('Rendimento por período:(%) '))
         valor_aport = float(input('Aporte a cada período: R$ '))
-        periodos = int(input('Total de períodos '))
+        periodos = int(input('Total de períodos: '))
 
 
         if(periodos == 0):

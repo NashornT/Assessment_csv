@@ -1,8 +1,5 @@
-from encodings import utf_8
 import matplotlib.pyplot as pit
-import pandas as pd
 
-'''variação = ((ultimo valor *100)/primeiro valor)-100'''
 
 paises = {
     'EUA':[16.76,17.41,18.12,18.95,19.86,20.76,21.61,22.48],
@@ -20,12 +17,11 @@ paises = {
     'ESPANHA':[1.39,1.4,1.23,1.26,1.3,1.35,1.41,1.48],
     'MÉXICO':[1.26,1.28,1.23,1.3,1.37,1.46,1.55,1.65],
     'INDONESIA':[9.13,8.89,8.96,9.52,1.03,1.11,1.2,1.3]
-
 }
 
 anos = [2013,2014,2015,2016,2017,2018,2019,2020]
 
-paises1 = pd.read_csv('Assessment_PIBs - modelo 1.csv', index_col=0 ) 
+
 
 
 def solicitador_pib():
@@ -47,11 +43,17 @@ def variacoes_anos():
 
 def grafico_pib():
     pais = input('Digite o pais: ').upper()
-    pit.scatter(anos,paises[pais])
+    pit.plot(anos,paises[pais], label= 'Evolução do PIB')
+    pit.xlabel('Anos')
+    pit.ylabel('PIB')
+    pit.legend()
     pit.show()
 
 
-
-print(paises1.loc[['EUA']])
+solicitador_pib()
+print('~~~'*20)
+variacoes_anos()
+print('~~~'*20)
+grafico_pib()
 
 
