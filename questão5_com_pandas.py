@@ -5,7 +5,7 @@ arquivo = pd.read_csv('Assessment_PIBs.csv',sep=',')
 
 dados = pd.DataFrame(arquivo)
 dados.set_index('País',inplace=True)
-
+# Teste
 def solicitador_pib():
     try:
         pais = input('Digite o pais: ').title()
